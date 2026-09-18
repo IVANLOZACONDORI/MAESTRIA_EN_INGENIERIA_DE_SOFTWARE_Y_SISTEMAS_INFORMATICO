@@ -1,0 +1,11 @@
+# Criterios de aceptación
+- CA-01. Cada decisión principal debe mapearse a RF/RNF.
+- CA-02. Comparar al menos 2 alternativas arquitectónicas.
+- CA-03. Explicar cómo se evita sobreventa.
+- CA-04. Justificar base de datos sin sesgo previo.
+- CA-05. Explicar soporte para 25.000 transacciones de negocio/hora.
+- CA-06. Evaluar escenario 10x.
+- CA-07. Definir idempotencia.
+- CA-08. Cubrir seguridad, observabilidad y recuperación.
+- CA-09. No introducir Kubernetes/microservicios sin justificación.
+- CA-10. No deben quedar hallazgos bloqueantes en revisión final.

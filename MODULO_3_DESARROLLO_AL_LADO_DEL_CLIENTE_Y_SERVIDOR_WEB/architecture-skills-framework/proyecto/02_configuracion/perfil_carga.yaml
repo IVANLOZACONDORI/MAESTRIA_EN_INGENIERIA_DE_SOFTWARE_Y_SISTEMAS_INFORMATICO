@@ -1,0 +1,17 @@
+transacciones_negocio_por_hora_objetivo: 25000
+multiplicador_pico: 3.0
+factor_crecimiento_a_evaluar: 10
+
+sucursales: 8
+cajas_por_sucursal: 6
+usuarios_internos_concurrentes_estimados: 180
+clientes_web_concurrentes_estimados: 1200
+
+latencia_ms_p95:
+  consulta_producto: 500
+  consulta_stock: 500
+  confirmar_venta_sin_pago_externo: 1200
+
+disponibilidad_objetivo_porcentaje: 99.9
+rpo_minutos: null
+rto_minutos: null

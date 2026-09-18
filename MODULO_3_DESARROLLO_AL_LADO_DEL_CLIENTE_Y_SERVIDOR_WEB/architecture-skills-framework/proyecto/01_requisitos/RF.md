@@ -1,0 +1,21 @@
+# Requisitos funcionales
+- RF-001. Administrar usuarios, roles y permisos.
+- RF-002. Administrar clientes.
+- RF-010. Administrar sucursales y cajas/POS.
+- RF-020. Administrar productos, categorías, precios y promociones.
+- RF-030. Administrar proveedores y órdenes de compra.
+- RF-031. Registrar recepción parcial o total de mercadería.
+- RF-040. Mantener inventario por producto y sucursal.
+- RF-041. Registrar entradas, salidas, reservas, ajustes y transferencias.
+- RF-042. Evitar doble descuento ante reintentos.
+- RF-050. Registrar ventas presenciales y sus pagos.
+- RF-051. Descontar inventario al confirmar venta presencial.
+- RF-060. Permitir catálogo, carrito y pedido web.
+- RF-061. Permitir entrega o retiro en sucursal.
+- RF-062. Validar/reservar stock antes de confirmar pedido.
+- RF-063. Integrar pagos mediante interfaz desacoplada del proveedor.
+- RF-064. Reflejar ventas web e inventario sin sobreventa frente al canal físico.
+- RF-070. Registrar devoluciones parciales o totales.
+- RF-080. Generar reportes operativos de ventas, compras e inventario.
+- RF-090. Auditar operaciones críticas.
+- RF-100. Administrar parámetros operativos sin modificar código.
