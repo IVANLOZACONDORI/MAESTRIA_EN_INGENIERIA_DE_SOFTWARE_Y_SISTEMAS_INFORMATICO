@@ -70,3 +70,46 @@ Entrega:
 - plan de pruebas antes de implementar.
 Resultado:
 08_recomendacion_final.md
+
+
+
+Continúa este proyecto con la fase de ingeniería de base de datos.
+
+Mantén exactamente la estructura existente.
+
+Lee:
+- AGENTS.md
+- SKILLS_SOURCES.md
+- proyecto/00_contexto/
+- proyecto/01_requisitos/
+- proyecto/02_configuracion/
+- proyecto/03_resultados/
+- proyecto/04_decisiones/
+
+Luego sigue:
+.agents/workflows/02_database_workflow.md
+
+Usa únicamente los skills existentes instalados en:
+.agents/skills/
+
+Continúa desde:
+.agents/state/database-workflow.json
+
+Trabaja paso por paso.
+No saltes etapas.
+No empieces directamente creando tablas o SQL.
+No elijas PostgreSQL, MySQL o SQL Server por preferencia:
+justifica la selección mediante RF, RNF, restricciones y arquitectura.
+
+Después de cada etapa:
+1. indica el skill utilizado;
+2. genera el artefacto correspondiente en proyecto/05_base_datos/;
+3. resume las decisiones;
+4. actualiza el checkpoint;
+5. continúa con el siguiente paso si no existe bloqueo.
+
+No conectes ni despliegues hasta que la revisión DBA genere:
+STATUS: APPROVED
+
+Nunca escribas credenciales en archivos versionados.
+No ejecutes operaciones destructivas sin autorización explícita.

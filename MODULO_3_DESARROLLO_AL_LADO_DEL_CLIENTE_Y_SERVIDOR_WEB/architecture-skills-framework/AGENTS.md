@@ -33,3 +33,29 @@ Para usar este framework con otro sistema:
 
 ## Trazabilidad
 Toda decisión debe relacionarse con un RF, RNF, regla de negocio, restricción o medición.
+
+
+## Política de skills
+No crear skills de base de datos si ya existe uno instalado que cubra la tarea.
+Los skills de BD deben provenir de repositorios registrados en
+`SKILLS_SOURCES.md`.
+
+Los skills instalados se encuentran en:
+`.agents/skills/`
+
+## Flujo de BD
+Cuando se solicite diseño/implementación de base de datos:
+1. leer `SKILLS_SOURCES.md`;
+2. leer `.agents/workflows/02_database_workflow.md`;
+3. leer `.agents/state/database-workflow.json`;
+4. usar los skills externos indicados para la etapa;
+5. trabajar en orden;
+6. actualizar el checkpoint.
+
+## Reglas
+- No saltar al SQL antes de completar el diseño.
+- No elegir DBMS por preferencia.
+- Mantener trazabilidad RF/RNF → modelo → constraint/índice/decisión.
+- No guardar credenciales en archivos versionados.
+- No desplegar antes de `STATUS: APPROVED`.
+- No ejecutar operaciones destructivas sin autorización explícita.
