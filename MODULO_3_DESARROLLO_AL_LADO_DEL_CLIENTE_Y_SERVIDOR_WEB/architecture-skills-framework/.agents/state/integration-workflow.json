@@ -1,0 +1,18 @@
+{
+    "workflow":  "06_integration_workflow",
+    "phase":  "integration",
+    "scope":  [
+                  "login",
+                  "categorias",
+                  "productos"
+              ],
+    "current_checkpoint":  "COMPLETED",
+    "technical_status":  "PASSED",
+    "human_status":  "APPROVED",
+    "last_completed":  "CP-INT-05",
+    "blocked":  false,
+    "can_continue":  true,
+    "blocked_by":  [
+
+                   ]
+}

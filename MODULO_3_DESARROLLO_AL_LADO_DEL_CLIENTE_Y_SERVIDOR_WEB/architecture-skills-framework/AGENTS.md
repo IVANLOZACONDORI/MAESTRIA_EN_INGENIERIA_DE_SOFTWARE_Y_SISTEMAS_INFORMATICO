@@ -59,3 +59,75 @@ Cuando se solicite diseño/implementación de base de datos:
 - No guardar credenciales en archivos versionados.
 - No desplegar antes de `STATUS: APPROVED`.
 - No ejecutar operaciones destructivas sin autorización explícita.
+
+
+
+
+
+
+
+## Desarrollo de aplicación — API, backend y frontend
+
+Después del workflow de base de datos usar, en orden:
+
+1. `.agents/workflows/03_api_pilot_workflow.md`
+2. `.agents/workflows/04_backend_workflow.md`
+3. `.agents/workflows/05_frontend_workflow.md`
+4. `.agents/workflows/06_integration_workflow.md`
+
+States:
+- `.agents/state/api-pilot-workflow.json`
+- `.agents/state/backend-workflow.json`
+- `.agents/state/frontend-workflow.json`
+- `.agents/state/integration-workflow.json`
+
+### Regla obligatoria de checkpoint
+
+- ejecutar UN checkpoint por interacción;
+- probarlo;
+- actualizar el state;
+- marcar `HUMAN_STATUS: PENDING`;
+- detenerse;
+- esperar otro mensaje.
+
+### Código
+
+Todo código nuevo se crea en:
+
+`proyecto/06_codigo/`
+
+### Decisiones vigentes
+
+- `proyecto/04_decisiones/decisiones_api.md`
+- `proyecto/04_decisiones/decisiones_backend.md`
+- `proyecto/04_decisiones/decisiones_frontend.md`
+- `proyecto/04_decisiones/decisiones_desarrollo_incremental.md`
+
+### Stack vigente
+
+- PHP puro, sin framework.
+- MVC.
+- MySQL 8.x / InnoDB.
+- PDO.
+- API REST JSON.
+- Frontend PHP + HTML + CSS + JavaScript puro.
+- Sin React/Vue/Angular en esta fase.
+
+### Lectura progresiva
+
+Al recibir `continúa`, leer primero state + workflow actuales.
+No releer todo el repositorio salvo que exista contradicción, cambio de decisión o el checkpoint lo requiera.
+
+## Alcance didáctico reducido 2026-09-29
+
+La fase de desarrollo está congelada en:
+- `auth_usuario`: login/logout/me;
+- `cat_categoria`: API piloto;
+- `cat_producto`: segundo módulo.
+
+Pantallas: `/login`, `/dashboard`, `/categorias`, `/productos`.
+
+No implementar otros módulos aunque existan tablas en la BD.
+La tabla piloto ya fue decidida: `cat_categoria`.
+Categorías y productos usan inactivación lógica.
+Un checkpoint por interacción y validación humana obligatoria.

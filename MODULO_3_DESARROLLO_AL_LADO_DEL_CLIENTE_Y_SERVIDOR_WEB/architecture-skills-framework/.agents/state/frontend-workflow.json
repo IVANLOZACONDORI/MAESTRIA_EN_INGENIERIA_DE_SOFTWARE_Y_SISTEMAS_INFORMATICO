@@ -1,0 +1,16 @@
+﻿{
+    "workflow":  "05_frontend_workflow",
+    "phase":  "frontend",
+    "scope":  [
+                  "/login",
+                  "/dashboard",
+                  "/categorias",
+                  "/productos"
+              ],
+    "current_checkpoint":  "COMPLETED",
+    "last_completed":  "CP-FRONT-09",
+    "technical_status":  "PASSED",
+    "human_status":  "APPROVED",
+    "blocked":  false,
+    "can_continue":  false
+}
