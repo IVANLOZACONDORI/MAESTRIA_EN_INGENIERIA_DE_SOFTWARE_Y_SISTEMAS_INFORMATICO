@@ -1,0 +1,19 @@
+{
+  "workflow": "07_landing_workflow",
+  "current_checkpoint": "CP-LAND-17",
+  "technical_status": "PASSED",
+  "human_status": "APPROVED",
+  "can_continue": false,
+  "last_completed_checkpoint": "CP-LAND-17",
+  "evidence": "proyecto/07_landing/tests/results/CP-LAND-17.txt",
+  "notes": [
+    "WORKFLOW COMPLETO Y APROBADO POR EL HUMANO (2026-10-01): CP-LAND-01 a CP-LAND-17 PASSED; TECHNICAL_STATUS=PASSED; HUMAN_STATUS=APPROVED.",
+    "Landing pública sin login: 7 categorías x 10 productos = 70, precios en Bs. Stack PHP 8.x puro / MySQL 8 / PDO, sin frameworks.",
+    "Auditorías: .agents/reviews/ (design, animation, accessibility, performance) todas PASS, pendientes de dueño: ninguno.",
+    "Evidencias: proyecto/07_landing/tests/results/CP-LAND-15.txt, CP-LAND-16.txt, CP-LAND-17.txt.",
+    "Cierre documentado en proyecto/07_landing/docs/validacion_final.md.",
+    "Techos conocidos: gzip/caché = config de producción (limitación php -S); srcset A3 solo si LCP > 1.5s (actual 500ms); Impeccable UPDATE_AVAILABLE v3.9.1 -> v4.3.1 (opcional).",
+    "No desplegar sin pedido explícito del humano (AGENTS.md).",
+    "Infra: Chrome OK (chrome-devtools MCP). Servidor dev 127.0.0.1:8110. PHP: C:\\Portable\\laragon\\bin\\php\\php-8.3.26-Win32-vs16-x64\\php.exe | MySQL 8.4.3 (127.0.0.1:3306, root, DB sistema): landing_categoria=7, landing_producto=70 (mysqld 'MariaDB' en 3307 no es la BD de la app)."
+  ]
+}
