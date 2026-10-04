@@ -1,40 +1,31 @@
-# Requisitos no funcionales
+# Requisitos No Funcionales Iniciales
 
-## Capacidad y rendimiento
-- RNF-001. Soportar inicialmente 25.000 transacciones de negocio por hora.
-- RNF-002. La capacidad objetivo debe ser configurable externamente.
-- RNF-003. Una transacción de negocio no equivale a una sentencia SQL.
-- RNF-004. Evaluar picos con el multiplicador configurado.
-- RNF-005. Mantener integridad bajo concurrencia entre canal físico y web.
+## Sistema seleccionado
 
-## Escalabilidad
-- RNF-010. Permitir crecimiento de sucursales/cajas sin rediseñar todo el dominio.
-- RNF-011. Evaluar un escenario de 10x la carga inicial.
+**SIGICI-RI – Sistema Inteligente de Gestión de Incidentes de Ciberseguridad y Respuesta Institucional**
 
-## Integridad
-- RNF-020. Evitar sobreventa por condiciones de carrera.
-- RNF-021. Definir fronteras transaccionales para dinero e inventario.
-- RNF-022. Evitar duplicados ante reintentos.
+## Requisitos no funcionales
 
-## Seguridad
-- RNF-030. Autenticación para operaciones administrativas.
-- RNF-031. Autorización por mínimo privilegio.
-- RNF-032. Cifrado en tránsito.
-- RNF-033. Contraseñas nunca en texto plano.
-- RNF-034. Secretos fuera del repositorio.
-- RNF-035. Controles de seguridad para APIs.
+- **RNF-01 – Seguridad.** El sistema deberá proteger la información contra accesos no autorizados.
 
-## Disponibilidad y recuperación
-- RNF-040. Definir estrategia de backup/restauración.
-- RNF-041. RPO/RTO deben definirse antes de producción.
-- RNF-042. Dependencias externas deben manejar timeout y reintentos controlados.
+- **RNF-02 – Rendimiento.** El sistema deberá responder rápidamente a las solicitudes realizadas por los usuarios.
 
-## Observabilidad
-- RNF-050. Logs estructurados.
-- RNF-051. Métricas de latencia, errores, disponibilidad y volumen.
-- RNF-052. Correlación de operaciones distribuidas cuando corresponda.
+- **RNF-03 – Disponibilidad.** El sistema deberá encontrarse disponible para los usuarios autorizados.
 
-## Portabilidad
-- RNF-060. Ejecutarse en Linux.
-- RNF-061. Poder contenerizarse.
-- RNF-062. Separar configuraciones de desarrollo, pruebas y producción.
+- **RNF-04 – Usabilidad.** La interfaz deberá ser fácil de utilizar.
+
+- **RNF-05 – Auditoría.** El sistema deberá conservar registros de las operaciones relevantes.
+
+- **RNF-06 – Integridad.** El sistema deberá proteger la integridad de la información almacenada.
+
+- **RNF-07 – Recuperación.** El sistema deberá permitir recuperar información ante fallos.
+
+- **RNF-08 – Escalabilidad.** El sistema deberá permitir el crecimiento futuro del número de usuarios e incidentes.
+
+- **RNF-09 – Mantenibilidad.** El sistema deberá facilitar su mantenimiento y evolución.
+
+- **RNF-10 – Confidencialidad.** La información sensible deberá ser accesible únicamente por personal autorizado.
+
+- **RNF-11 – Trazabilidad.** Las modificaciones realizadas sobre los incidentes deberán poder ser rastreadas.
+
+- **RNF-12 – Compatibilidad.** El sistema deberá poder utilizarse desde navegadores modernos.
